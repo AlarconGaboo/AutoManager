@@ -1,0 +1,59 @@
+
+alarc@YoshiminGabo MINGW64 ~/OneDrive/Escritorio/PRACTIANDO HTML/MODULO6/SESION5-M6 (master)
+$ cd AutoManager
+
+alarc@YoshiminGabo MINGW64 ~/OneDrive/Escritorio/PRACTIANDO HTML/MODULO6/SESION5-M6/AutoManager (master)
+$ npm init -y
+Wrote to C:\Users\alarc\OneDrive\Escritorio\PRACTIANDO HTML\MODULO6\SESION5-M6\AutoManager\package.json:
+
+{
+  "name": "automanager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+
+alarc@YoshiminGabo MINGW64 ~/OneDrive/Escritorio/PRACTIANDO HTML/MODULO6/SESION5-M6/AutoManager (master)
+$ npm install fs-extra
+
+added 4 packages, and audited 5 packages in 2s
+
+found 0 vulnerabilities
+
+alarc@YoshiminGabo MINGW64 ~/OneDrive/Escritorio/PRACTIANDO HTML/MODULO6/SESION5-M6/AutoManager (master)
+$ touch autos.json
+
+alarc@YoshiminGabo MINGW64 ~/OneDrive/Escritorio/PRACTIANDO HTML/MODULO6/SESION5-M6/AutoManager (master)
+$ touch autos.js
+
+alarc@YoshiminGabo MINGW64 ~/OneDrive/Escritorio/PRACTIANDO HTML/MODULO6/SESION5-M6/AutoManager (master)
+$ node autos.js leer
+Contenido del archivo completo: {
+  ferrari: { modelo: 'F40', asientos: 2, puertas: '3' },
+  porsche: { modelo: '911', asientos: 2 },
+  lamborghini: { modelo: 'murcielago', asientos: 2 }
+}
+
+alarc@YoshiminGabo MINGW64 ~/OneDrive/Escritorio/PRACTIANDO HTML/MODULO6/SESION5-M6/AutoManager (master)
+$ node autos.js leer ferrari
+Características del ferrari: { modelo: 'F40', asientos: 2, puertas: '3' }
+
+alarc@YoshiminGabo MINGW64 ~/OneDrive/Escritorio/PRACTIANDO HTML/MODULO6/SESION5-M6/AutoManager (master)
+$ node autos.js modificar ferrari puertas 3
+Propiedad "puertas" del ferrari modificada/añadida con éxito.
+
+alarc@YoshiminGabo MINGW64 ~/OneDrive/Escritorio/PRACTIANDO HTML/MODULO6/SESION5-M6/AutoManager (master)
+$ node autos.js leer ferrari
+Características del ferrari: { modelo: 'F40', asientos: 2, puertas: '3' }
+
+alarc@YoshiminGabo MINGW64 ~/OneDrive/Escritorio/PRACTIANDO HTML/MODULO6/SESION5-M6/AutoManager (master)
+$
